@@ -4,7 +4,7 @@ const config = {
   waarn_path: "https://staging-api.waarn.finance/core",
   strategy_path: "https://staging-api.waarn.finance/strategy",
   jwt: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NTk1NTYxZC1jMmRmLTQ5Y2EtOGRiZi0xYzQwYWQxODVkMTMiLCJpYXQiOjE2NTI2NzM4MTgsImV4cCI6MTY2MTMxMzgxOH0.fB7headw3rrIvDBkcVAkjsJmaF69l-zTFHkCGBOSILU",
-  domain: "waarn",
+  domain: "WAARN",
 };
 
 export const options = {
