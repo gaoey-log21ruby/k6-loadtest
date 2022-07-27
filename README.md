@@ -29,5 +29,7 @@ source ~/.zshrc
 
 ## Details
 get starter - https://k6.io/docs/getting-started/running-k6/
+
 see k6 metrics here - https://k6.io/docs/using-k6/metrics/
+
 thresold -  https://k6.io/docs/using-k6/thresholds/
