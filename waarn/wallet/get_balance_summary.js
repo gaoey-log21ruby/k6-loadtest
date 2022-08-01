@@ -1,11 +1,6 @@
 import http from "k6/http";
 
-const config = {
-  waarn_path: "https://staging-api.waarn.finance/core",
-  strategy_path: "https://staging-api.waarn.finance/strategy",
-  jwt: "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI3NTk1NTYxZC1jMmRmLTQ5Y2EtOGRiZi0xYzQwYWQxODVkMTMiLCJpYXQiOjE2NTI2NzM4MTgsImV4cCI6MTY2MTMxMzgxOH0.fB7headw3rrIvDBkcVAkjsJmaF69l-zTFHkCGBOSILU",
-  domain: "WAARN",
-};
+const config = JSON.parse(open(`../../env/waarn/${__ENV.APP_ENV}.json`));
 
 export const options = {
   thresholds: {
@@ -15,7 +10,7 @@ export const options = {
 };
 
 export default function () {
-  const url = `${config.waarn_path}/user/balance-summary`;
+  const url = `${config.base_url}/user/balance-summary`;
   const params = {
     headers: {
       "Content-Type": "application/json",

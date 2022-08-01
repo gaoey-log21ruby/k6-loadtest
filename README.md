@@ -27,6 +27,13 @@ alias k6 = /opt/homebrew/bin/k6
 source ~/.zshrc
 ```
 
+## Running
+1. get .env file from your team
+2. run command by environment such as "prod", "staging" etc
+```
+k6 run --vus=10 --iterations=100 --env APP_ENV="{env}" <path>
+```
+
 ## Details
 get starter - https://k6.io/docs/getting-started/running-k6/
 
